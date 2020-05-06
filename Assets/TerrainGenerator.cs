@@ -13,11 +13,11 @@ public class TerrainGenerator : MonoBehaviour
         float[,] map1 = HeightMap(new float[width, height], 3.0F, 0.4F);
 
         float[,] map2 = HeightMap(map1, 15F, 0.05F);
-        float[,] ridged1 = Ridged(map2, 0.20F);
+        float[,] ridged1 = Ridged(map2, 0.2F);
 
         float[,] map3 = HeightMap(ridged1, 50F, 0.007F);
         float[,] map4 = HeightMap(map3, 100F, 0.003F);
-        float[,] map5 = HeightMap(map4, 300F, 0.004F);
+        float[,] map5 = HeightMap(map4, 300F, 0.002F);
 
         data.SetHeights(0, 0, map5);
     }
