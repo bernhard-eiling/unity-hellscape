@@ -10,7 +10,7 @@ public class TerrainGenerator : MonoBehaviour
         data = GetComponent<Terrain>().terrainData;
         int width = data.heightmapResolution;
         int height = data.heightmapResolution;
-        float[,] map1 = HeightMap(new float[width, height], 3F, 0.4F);
+        float[,] map1 = HeightMap(new float[width, height], 3.0F, 0.4F);
 
         float[,] map2 = HeightMap(map1, 15F, 0.05F);
         float[,] ridged1 = Ridged(map2, 0.20F);
@@ -55,5 +55,17 @@ public class TerrainGenerator : MonoBehaviour
             }
         }
         return baseMap;
+    }
+
+    float PerlinNoise3D(float x, float y, float z)
+    {
+        float xy = Mathf.PerlinNoise(x, y);
+        float xz = Mathf.PerlinNoise(x, z);
+        float yz = Mathf.PerlinNoise(y, z);
+        float yx = Mathf.PerlinNoise(y, x);
+        float zx = Mathf.PerlinNoise(z, x);
+        float zy = Mathf.PerlinNoise(z, y);
+ 
+        return (xy + xz + yz + yx + zx + zy) / 6;
     }
 }
