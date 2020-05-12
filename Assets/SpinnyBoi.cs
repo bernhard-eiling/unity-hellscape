@@ -8,7 +8,6 @@ public class SpinnyBoi : MonoBehaviour {
     static float size = 4;
     Vector3 scale = new Vector3(size, size, size);
     int numberRods = 40;
-    GameObject gameObject;
     Rigidbody rigidbody;
 
     void Start() {
@@ -19,7 +18,6 @@ public class SpinnyBoi : MonoBehaviour {
     }
 
     void SetupGameObject() {
-        gameObject = new GameObject();
         gameObject.AddComponent<Rigidbody>();
         rigidbody = gameObject.GetComponent<Rigidbody>();
         gameObject.transform.parent = transform;
@@ -66,7 +64,7 @@ public class Rod {
 
     public void Update(float parentSpeed) {
         // float baseSpeed = (float)Math.Pow(2d, parentSpeed / 1.05F);
-        float speed = parentSpeed / 10;
+        float speed = parentSpeed / 20;
         gameObject.transform.Rotate(rotation * speed);
     }
 }
