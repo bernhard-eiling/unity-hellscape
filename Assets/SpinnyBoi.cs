@@ -41,13 +41,13 @@ public class SpinnyBoi : MonoBehaviour {
     }
 
     void FixedUpdate() {
-        float delay = 4F;
-        if (Time.realtimeSinceStartup < delay) {
-            return;
-        }
-        Vector3 direction = new Vector3(1, 0, -1);
-        Vector3 velocity = direction * (Time.realtimeSinceStartup - delay) * 3F;
-        rigidbody.AddForce(velocity);
+        // float delay = 4F;
+        // if (Time.realtimeSinceStartup < delay) {
+        //     return;
+        // }
+        // Vector3 direction = new Vector3(1, 0, -1);
+        // Vector3 velocity = direction * (Time.realtimeSinceStartup - delay) * 3F;
+        // rigidbody.AddForce(velocity);
     }
 }
 
