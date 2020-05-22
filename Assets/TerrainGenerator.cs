@@ -19,19 +19,24 @@ public class TerrainGenerator : MonoBehaviour
         float[,] map4 = HeightMap(map3, 100F, 0.003F);
         float[,] map5 = HeightMap(map4, 300F, 0.002F);
 
-        data.SetHeights(0, 0, map5);
+        // data.SetHeights(0, 0, map5);
+        data.SetHeights(0, 0, new float[width, height]);
     }
 
     void Update()
     {}
 
-    float[,] Ridged(float[,] baseMap, float inversionThreshold) {
+    float[,] Ridged(float[,] baseMap, float inversionThreshold) 
+    {
         int width = baseMap.GetLength(0);
         int height = baseMap.GetLength(1);
-        for (int h = 0; h < height; h++) {
-            for (int w = 0; w < width; w++) {
+        for (int h = 0; h < height; h++) 
+        {
+            for (int w = 0; w < width; w++) 
+            {
                 float baseValue = baseMap[w, h];
-                if (baseValue > inversionThreshold) {
+                if (baseValue > inversionThreshold) 
+                {
                     baseValue -= inversionThreshold;
                     baseValue *= -1.0F;
                     baseValue += inversionThreshold;
@@ -42,11 +47,14 @@ public class TerrainGenerator : MonoBehaviour
         return baseMap;
     }
  
-    float[,] HeightMap(float[,] baseMap, float planeScale, float heightScale) {
+    float[,] HeightMap(float[,] baseMap, float planeScale, float heightScale) 
+    {
         int width = baseMap.GetLength(0);
         int height = baseMap.GetLength(1);
-        for (int h = 0; h < height; h++) {
-            for (int w = 0; w < width; w++) {
+        for (int h = 0; h < height; h++) 
+        {
+            for (int w = 0; w < width; w++) 
+            {
                 float x = (float)w / width * planeScale;
                 float y = (float)h / height * planeScale;
                 float randValue = Mathf.PerlinNoise(x, y) * heightScale;

@@ -1,0 +1,46 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1589977481",
+        "python_version": "3.7.4 (default, Sep  7 2019, 18:27:02) \n[Clang 10.0.1 (clang-1001.0.46.4)]",
+        "command_line_arguments": "/usr/local/bin/mlagents-learn config/spinnyboi_config.yaml --run-id=SpinnyBoi2 --force",
+        "mlagents_version": "0.16.0",
+        "mlagents_envs_version": "0.16.0",
+        "communication_protocol_version": "1.0.0",
+        "tensorflow_version": "2.2.0",
+        "end_time_seconds": "1589977505"
+    },
+    "total": 23.379448148999998,
+    "count": 1,
+    "self": 0.007632617999998814,
+    "children": {
+        "run_training.setup": {
+            "total": 0.00998107699999995,
+            "count": 1,
+            "self": 0.00998107699999995
+        },
+        "TrainerController.start_learning": {
+            "total": 23.361834454,
+            "count": 1,
+            "self": 0.001785011999999142,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 23.359772487,
+                    "count": 1,
+                    "self": 23.359772487
+                },
+                "trainer_threads": {
+                    "total": 2.6016999999711743e-05,
+                    "count": 1,
+                    "self": 2.6016999999711743e-05
+                },
+                "TrainerController._save_model": {
+                    "total": 0.0002509380000006445,
+                    "count": 1,
+                    "self": 0.0002509380000006445
+                }
+            }
+        }
+    }
+}
