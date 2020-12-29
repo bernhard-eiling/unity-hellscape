@@ -1,0 +1,24 @@
+{
+    "SpinnyBoi": {
+        "checkpoints": [
+            {
+                "steps": 292969,
+                "file_path": "results/spinning_away/SpinnyBoi/SpinnyBoi-292969.onnx",
+                "reward": 1.27655996799469,
+                "creation_time": 1609184842.46474
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 292969,
+            "file_path": "results/spinning_away/SpinnyBoi.onnx",
+            "reward": 1.27655996799469,
+            "creation_time": 1609184842.46474
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.2.0",
+        "mlagents_version": "0.23.0",
+        "torch_version": "1.7.1",
+        "tensorflow_version": -1
+    }
+}

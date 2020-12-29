@@ -109,7 +109,7 @@ public class SpinnyBoi : Agent
         currentDistanceToTarget = Vector3.Distance(gameObject.transform.localPosition, food.transform.localPosition);
 
         bool isMovingCloser = currentDistanceToTarget < lastDistanceToTarget;
-        Debug.Log(isMovingCloser);
+        // Debug.Log(isMovingCloser);
         if (isMovingCloser) 
         {
             SetReward(0.01F);
@@ -168,7 +168,7 @@ public class Rod
 
     public void Update(float parentSpeed) 
     {
-        // float baseSpeed = (float)Math.Pow(2d, parentSpeed / 1.05F);
+        float baseSpeed = (float)Math.Pow(2d, parentSpeed / 1.05F);
         float speed = parentSpeed / 20;
         gameObject.transform.Rotate(rotation * speed);
     }

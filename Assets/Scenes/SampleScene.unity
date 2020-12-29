@@ -306,7 +306,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b56232fce182c4f519cd804c89c592db, type: 3}
+  m_Script: {fileID: 11500000, guid: dd3f8c7a561cf4476a1f5cb0280047e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1147325129
@@ -338,14 +338,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1147325129}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f08eb2757be54f379bc033f75dca123, type: 3}
+  m_Script: {fileID: 11500000, guid: fb04caea441084feb922d93d70796a6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 5000
-  food: {fileID: 0}
+  MaxStep: 0
+  food: {fileID: 1789488093}
 --- !u!114 &1147325131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -364,7 +364,7 @@ MonoBehaviour:
     VectorActionSize: 02000000
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
-  m_Model: {fileID: 5022602860645237092, guid: 6203dde1166f54191bf27662ece9e81b, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: 469344714dac94737bd64e2f73cf8dee, type: 3}
   m_InferenceDevice: 1
   m_BehaviorType: 0
   m_BehaviorName: SpinnyBoi
@@ -450,7 +450,7 @@ GameObject:
   - component: {fileID: 1513424501}
   - component: {fileID: 1513424504}
   m_Layer: 0
-  m_Name: Terrain
+  m_Name: GeneratedTerrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -465,7 +465,7 @@ TerrainCollider:
   m_GameObject: {fileID: 1513424500}
   m_Material: {fileID: 0}
   m_Enabled: 1
-  m_TerrainData: {fileID: 15600000, guid: f29ce9fb5734944a991a46027aed73e5, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: a5acdad09d7994db599c0f030d48c4d0, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &1513424502
 Terrain:
@@ -476,7 +476,7 @@ Terrain:
   m_GameObject: {fileID: 1513424500}
   m_Enabled: 1
   serializedVersion: 6
-  m_TerrainData: {fileID: 15600000, guid: f29ce9fb5734944a991a46027aed73e5, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: a5acdad09d7994db599c0f030d48c4d0, type: 2}
   m_TreeDistance: 5000
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
@@ -523,7 +523,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1513424500}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d316f0ee3c42c4102a8ea3df369cc293, type: 3}
+  m_Script: {fileID: 11500000, guid: 06879fe78582248e7aa9f4b0cb9395f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1789488093

@@ -3,11 +3,12 @@ using UnityEngine;
 
 public class TerrainGenerator : MonoBehaviour
 {
-    private TerrainData data;
-
     void Start()
     {
-        data = GetComponent<Terrain>().terrainData;
+        return;
+
+        TerrainData data = Terrain.activeTerrain.terrainData;
+
         int width = data.heightmapResolution;
         int height = data.heightmapResolution;
         float[,] map1 = HeightMap(new float[width, height], 3.0F, 0.4F);
@@ -19,8 +20,7 @@ public class TerrainGenerator : MonoBehaviour
         float[,] map4 = HeightMap(map3, 100F, 0.003F);
         float[,] map5 = HeightMap(map4, 300F, 0.002F);
 
-        // data.SetHeights(0, 0, map5);
-        data.SetHeights(0, 0, new float[width, height]);
+        data.SetHeights(0, 0, map5);
     }
 
     void Update()
