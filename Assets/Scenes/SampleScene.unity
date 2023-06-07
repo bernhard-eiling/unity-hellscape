@@ -324,7 +324,7 @@ TerrainCollider:
   m_GameObject: {fileID: 1513424500}
   m_Material: {fileID: 0}
   m_Enabled: 1
-  m_TerrainData: {fileID: 15600000, guid: f29ce9fb5734944a991a46027aed73e5, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: 17cac03e669ac4878bfb46b26fdcd7c3, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &1513424502
 Terrain:
@@ -335,7 +335,7 @@ Terrain:
   m_GameObject: {fileID: 1513424500}
   m_Enabled: 1
   serializedVersion: 6
-  m_TerrainData: {fileID: 15600000, guid: f29ce9fb5734944a991a46027aed73e5, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: 17cac03e669ac4878bfb46b26fdcd7c3, type: 2}
   m_TreeDistance: 5000
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
@@ -382,6 +382,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1513424500}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d316f0ee3c42c4102a8ea3df369cc293, type: 3}
+  m_Script: {fileID: 11500000, guid: 53433a573c66c445fa768920ba6f6eb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
